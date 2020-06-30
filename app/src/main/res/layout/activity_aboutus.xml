@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutusActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separator_4"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_gravity="center"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_splashlogo"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/black"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Reporting App"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/colorLightwhite"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 11.4.2"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+    <!--    </androidx.cardview.widget.CardView>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorLightwhite"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Previous"
+        app:layout_constraintStart_toStartOf="@+id/txt_Previous"
+        app:layout_constraintBottom_toBottomOf="@id/txt_Previous"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:drawableRight="@drawable/ic_right"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center_horizontal|center_vertical"
+        android:text="Trems and Codition"
+        android:textColor="@color/colorLightwhite"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightwhite"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Previous"
+        app:layout_constraintStart_toStartOf="@+id/txt_Previous"
+        app:layout_constraintBottom_toBottomOf="@id/txt_Previous"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="left|center_horizontal|center_vertical"
+        android:drawableRight="@drawable/ic_right"
+        android:text="About Marketing"
+        android:textColor="@color/colorLightwhite"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightwhite"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Previous"
+        app:layout_constraintStart_toStartOf="@+id/txt_Previous"
+        app:layout_constraintBottom_toBottomOf="@id/txt_Previous"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="left|center_horizontal|center_vertical"
+        android:drawableRight="@drawable/ic_right"
+        android:text="Privacy Policy"
+        android:textColor="@color/colorLightwhite"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightwhite"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Previous"
+        app:layout_constraintStart_toStartOf="@+id/txt_Previous"
+        app:layout_constraintBottom_toBottomOf="@id/txt_Previous"/>
+</LinearLayout>

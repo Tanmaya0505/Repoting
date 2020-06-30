@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.abstech.absreporting">
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- <uses-feature android:name="android.hardware.camera" android:required="true" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TaskGetDetailsActivity"></activity>
+        <activity android:name=".AboutusActivity" />
+        <activity android:name=".CalendarViewScrollableActivity" />
+        <activity android:name=".CalenderHolidayListActivity" />
+        <activity android:name=".MyTaskActivity" />
+        <activity android:name=".AttendanceListActivity" />
+        <activity android:name=".FuelListActivity" />
+        <activity android:name=".AttendanceDialogActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".ApplyLeaveActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".ViewAgendaDrawableEventActivity" />
+        <activity android:name=".CompanyHolidayListActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".BottomSheetReportProblemActivity" />
+        <activity android:name=".ReportProblemActivity" />
+        <activity android:name=".MyNoteAdapter" />
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".MyNoteActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".FuelReportActivity" />
+        <activity android:name=".EditFuelExpenseActivity" />
+        <activity android:name=".AddServiceActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".MapLocationActivity" />
+        <activity android:name=".Speedview.ControlActivity" />
+        <activity android:name=".Speedview.SpeedViewActivity" />
+        <activity android:name=".Speedview.Activity1" />
+        <activity android:name=".Speedview.Activity2" />
+        <activity android:name=".ReportStatisticsActivity" />
+        <activity android:name=".ReportDetailsActivity" />
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AdvertismentBased" />
+        <activity android:name=".PharmaBased" />
+        <activity android:name=".QuestionsMarketing" />
+        <activity android:name=".RealStateBased" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".FaceDetectionUtil.ScannerActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+</manifest>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".EditFuelExpenseActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize" />
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/fromdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/separator_13"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="From Date"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/user"
+            android:padding="5dp"
+            android:text="12:00 PM">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/odometer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_odometer"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint=""
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/separator_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+
+    <RelativeLayout
+        android:id="@+id/select_service_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:hint="Select service"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_select_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_drop_down_arrow_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator_2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+
+    <EditText
+        android:id="@+id/totalcost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint=""
+        android:inputType="number"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/separator_3"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_note"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint=""
+        android:inputType="text"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/separator_4"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btnupload"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/loginbutton_selector"
+            android:text="Upload"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/edt_upload"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:background="@drawable/rectangle_edittext"
+            android:hint="Upload here" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/loginbutton_selector"
+        android:gravity="center"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:fillViewport="true">-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="405dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:background="@color/blue"
+                android:orientation="vertical">
+                    <FrameLayout
+                        android:id="@+id/frame"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ic_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_user_default"
+                            android:gravity="center|top" />
+
+                        <ImageView
+                            android:id="@+id/iv_camera"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom|right"
+                            android:src="@drawable/ic_camera" />
+                    </FrameLayout>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Deepak Kumar Sahoo"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="275dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Photo Upload"
+                            android:gravity="center"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="999"
+                            android:background="@drawable/rounded_color_next2"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Distance"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            />
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="999"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_color_next2"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Site  Visited"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            />
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:text="79"
+                            android:textStyle="bold"
+                            android:background="@drawable/rounded_color_next2"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:paddingLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/email"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="deepak@gmail.com"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:paddingLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/phone"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="+91 9861568938"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:paddingLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/user"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="IN/ODI01/034"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--</ScrollView>-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/container1"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="@color/white"-->
+<!--    tools:context=".AccountFragment">-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/separator_4"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="1px"-->
+<!--        android:background="@color/button_selectorcolor" />-->
+
+
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/frame"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginBottom="20dp">-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/ic_image"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/ic_user_default"-->
+<!--            android:gravity="center|top" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_camera"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="bottom|right"-->
+<!--            android:src="@drawable/ic_camera" />-->
+<!--    </FrameLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="3">-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/rounded_color_next1"-->
+<!--                    android:gravity="center|top" />-->
+<!--                -->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/rounded_color_next2"-->
+<!--                    android:gravity="center|top" />-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/rounded_color_next3"-->
+<!--                    android:gravity="center|top" />-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Deepak Kumar Sahoo"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textSize="18sp">-->
+<!--        </TextView>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Emp Id-IN/ODI01/034"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:textStyle="bold"-->
+<!--        android:padding="5dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textSize="12sp">-->
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="deepaksahoo@gmail.com"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="12sp"-->
+<!--        android:padding="5dp">-->
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="+919861568938"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="12sp"-->
+<!--        android:padding="5dp">-->
+<!--    </TextView>-->
+
+
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/text"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="290dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="90dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginLeft="90dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Deepak kumar sahoo"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@android:color/black"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/text1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="290dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="90dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginLeft="90dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="\n\n  +919861568938&ndash;&gt;-->
+<!--&lt;!&ndash;                \ndeepaksahoo@gmail.com"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@android:color/black"/>&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;    </androidx.cardview.widget.CardView>&ndash;&gt;-->
+<!--</LinearLayout>-->

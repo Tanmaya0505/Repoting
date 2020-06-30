@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:background="@color/white"
+    tools:context=".RealStateBased">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/separator_4"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:text="Have You Met With Person and How is the Reaction ?"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:button="@drawable/custom_button_background"
+            android:layout_marginStart="45dp"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/change1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="No" />
+        <RadioButton
+            android:id="@+id/Change2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="It Was Good" />
+        <RadioButton
+            android:id="@+id/change4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="Happy Metting" />
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="Conditions He had for buying ?"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/radio2"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/Good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:button="@drawable/custom_button_background"
+            android:layout_marginStart="45dp"
+            android:text="Money" />
+
+        <RadioButton
+            android:id="@+id/bad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="Road View" />
+        <RadioButton
+            android:id="@+id/Awsome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="Free Space Around" />
+        <RadioButton
+            android:id="@+id/Managable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="All The Above" />
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:text="Is he impressed with the offer?"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/radio3"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:button="@drawable/custom_button_background"
+            android:layout_marginStart="45dp"
+            android:text="Yes " />
+
+        <RadioButton
+            android:id="@+id/Design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="No" />
+        <RadioButton
+            android:id="@+id/Perfect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="Asked For Time" />
+        <RadioButton
+            android:id="@+id/No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:button="@drawable/custom_button_background"
+            android:text="Will Infrom Soon" />
+    </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/loginbutton_selector"
+        android:textColor="@color/white"
+        android:text="Submit"/>
+</LinearLayout>

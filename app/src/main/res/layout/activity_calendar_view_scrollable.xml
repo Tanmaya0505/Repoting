@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout android:orientation="vertical" android:id="@+id/ReminderLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/TaskName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textSize="26.0sp" />
+
+            <View
+                android:id="@+id/seperator"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip" />
+
+            <TextView
+                android:id="@+id/lblNotes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Notes" />
+
+            <EditText
+                android:id="@+id/TaskNotes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textSize="26.0sp" />
+
+            <View
+                android:id="@+id/seperator1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip" />
+
+            <TextView
+                android:id="@+id/lblReminder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Reminder" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">"
+            <CalendarView
+                android:id="@+id/calendarReminder"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

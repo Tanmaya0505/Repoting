@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AttendanceDialogActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textStyle="bold"/>
+    <View
+        android:id="@+id/separator_4"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+    <RadioButton
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:button="@drawable/custom_button_background"
+        android:text="Mark as present" />
+
+    <RadioButton
+        android:id="@+id/change1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:button="@drawable/custom_button_background"
+        android:text="Mark as absent" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/loginbutton_selector"
+        android:textColor="@color/white"
+        android:text="Submit"/>
+
+
+</LinearLayout>

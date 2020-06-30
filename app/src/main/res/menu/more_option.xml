@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/location"
+        android:title="Get Location" />
+
+    <item
+        android:id="@+id/speed"
+        android:title="Speed View" />
+
+    <item
+        android:id="@+id/mynote"
+        android:title="My Note" />
+
+    <item
+        android:id="@+id/fuel"
+        android:title="Fuel Expenses" />
+
+    <item
+        android:id="@+id/reportproblem"
+        android:title="Report a Problem" />
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notification" />
+    <item
+        android:id="@+id/calender"
+        android:title="Holiday List" />
+    <item
+        android:id="@+id/applyleave"
+        android:title="Apply Leave" />
+    <item
+        android:id="@+id/attendance"
+        android:title="My Attendance" />
+
+
+    <item
+        android:id="@+id/confpass"
+        android:title="Change Password" />
+
+    <item
+        android:id="@+id/about"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+</menu>

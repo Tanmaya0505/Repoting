@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".TodayTaskFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/image_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:padding="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner_orange_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical|center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:tag="image_tag"
+                            android:text="Fri"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical|center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:tag="image_tag"
+                            android:text="29"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/image_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_social_media_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_horizontal|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/note_title"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_horizontal|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/note_description"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/loginbutton_selector"
+                            android:text="Get details"
+                            android:layout_marginBottom="10dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/image_layout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:padding="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner_orange_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_day5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical|center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:tag="image_tag"
+                            android:text="Fri"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_date5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical|center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:tag="image_tag"
+                            android:text="29"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/image_layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_social_media_title6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_horizontal|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/note_title"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_description6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_horizontal|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/note_description"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/loginbutton_selector"
+                            android:text="Get details"
+                            android:layout_marginBottom="10dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/image_layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:padding="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner_orange_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_day2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical|center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:tag="image_tag"
+                            android:text="Fri"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_date2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical|center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:tag="image_tag"
+                            android:text="29"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/image_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_social_media_title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_horizontal|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/note_title"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_description2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_horizontal|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/note_description"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/loginbutton_selector"
+                            android:text="Get details"
+                            android:layout_marginBottom="10dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

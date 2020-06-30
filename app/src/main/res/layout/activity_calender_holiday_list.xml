@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CalenderHolidayListActivity">
+
+
+
+
+<!--    <CalendarView-->
+<!--        android:id="@+id/calender"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:showWeekNumber="false"-->
+<!--        android:layout_marginLeft="19dp"-->
+<!--        android:scrollbars="none">-->
+
+<!--    </CalendarView>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separator_4"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/button_selectorcolor" />
+
+    <CalendarView
+        android:id="@+id/datePicker1"
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datePicker1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cardview1"
+
+        >
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/eight" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/shivratri"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="Holiday for mahashivratri" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cardview2"
+
+        >
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fifteen" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/eid"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="Holiday for Eid" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cardview3">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:src="@drawable/twentysix" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/holi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="Holiday for Holi" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cardview4">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/thirty" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/durgapuja"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="Holiday for Dussehra" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+

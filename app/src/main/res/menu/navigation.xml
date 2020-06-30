@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_task"
+        android:icon="@drawable/ic_task_complete"
+        android:title="Task" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_file_upload"
+        android:title="Upload Photo" />
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/report1"
+        android:title="Report"/>
+    <item
+        android:id="@+id/navigation_report_statistics"
+        android:icon="@drawable/reportstastis"
+        android:title="Report Statistics"/>
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_cicle"
+        android:title="My Account"/>
+
+</menu>
